@@ -4,6 +4,7 @@ from keras.models import load_model
 import numpy as np
 
 def deneme():
+    print('deneme fonksiyonu içi ------------------- ')
     face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
     model = load_model("gulumseme_tespiti_modeli.h5")

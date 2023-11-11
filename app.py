@@ -8,13 +8,17 @@ from flask import Flask, make_response, jsonify
 app = Flask(__name__)
 CORS(app, origins="*")
 
+print("DENEME -------- ")
 
 
 @app.route('/start', methods=['POST'])
 def start():
-    result = deneme()
-    response = jsonify(result)
-    return response
+    try:
+        result = deneme()
+        response = jsonify(result)
+        return response
+    except Exception as e:
+        print(e)
 
 @app.route('/test', methods=['GET'])
 def start2():
