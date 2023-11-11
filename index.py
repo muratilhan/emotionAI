@@ -1,5 +1,4 @@
 from tespit import deneme
-import cv2
 from keras.preprocessing import image
 from keras.models import load_model
 import numpy as np
