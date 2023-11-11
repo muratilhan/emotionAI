@@ -2,7 +2,8 @@ gunicorn
 FLASK==2.1.0
 Werkzeug==2.2.2
 numpy
-opencv-python-headless
+cv2
 keras
 tensorflow
+opencv
 flask_cors
