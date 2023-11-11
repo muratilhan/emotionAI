@@ -3,3 +3,4 @@ Werkzeug==2.2.2
 numpy
 opencv-python-headless
 keras
+tensorflow
