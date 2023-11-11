@@ -16,6 +16,9 @@ def start():
     response = jsonify(result)
     return response
 
+@app.route('/test', methods=['GET'])
+def start2():
+    return "bu bir get method"
 
     
 if __name__ == '__main__':
