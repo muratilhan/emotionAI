@@ -18,8 +18,11 @@ def start():
 
 @app.route('/test', methods=['GET'])
 def start2():
-    return "bu bir get method"
+    return jsonify({"message":"bu bir get method"})
 
+@app.errorhandler(404)
+def invalidRoute(e):
+    return e
     
 if __name__ == '__main__':
     app.run(debug=True)
