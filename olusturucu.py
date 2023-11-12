@@ -3,7 +3,7 @@
 import cv2      #opencv kütüphanesi eklendi
 
 #stream_url = f"rtsp://SimaProject:Yumurta1@192.168.1.117:554/stream1"
-vid_cam = cv2.VideoCapture(0)   #(stream_url)video kamera tanımlandı
+vid_cam = cv2.VideoCapture(1)   #(stream_url)video kamera tanımlandı
 
 face_detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
