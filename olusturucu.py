@@ -12,7 +12,7 @@ number = 1      #çekilecek fotoğraf sayısı
 
 while(True):
     _, frame = vid_cam.read()   #kamera okutuldu
-
+    print('oluşturucu 52. satır: ',frame)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) #gri tonlama eklendi
     
     #Eger yuze benzeyen ufak bolgeler karistiriliyorsa minSize = () eklenebilir. Default 130,130

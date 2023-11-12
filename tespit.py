@@ -9,11 +9,14 @@ def deneme():
 
     model = load_model("gulumseme_tespiti_modeli.h5")
     cap = cv2.VideoCapture(0)
+    print('tespit 12. satır: ',cap)
+
     smileCount = 0  
     while True:
         _, frame = cap.read()
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        
+        print('tespit 16. satır: ',frame)
+
         faces = face.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5, minSize=(30, 30))
 
         for (x, y, w, h) in faces:
