@@ -3,6 +3,6 @@ FLASK==2.1.0
 Werkzeug==2.2.2
 numpy
 keras
-tensorflow
+tensorflow-gpu
 opencv-python
 flask_cors

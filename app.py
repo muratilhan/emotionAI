@@ -6,28 +6,23 @@ from flask_cors import CORS
 from flask import Flask, make_response, jsonify
 
 app = Flask(__name__)
-CORS(app, origins="*")
+CORS(app)
 
 print("DENEME -------- ")
 
 
 @app.route('/start', methods=['POST'])
 def start():
-    try:
         result = deneme()
         response = jsonify(result)
         return response
-    except Exception as e:
-        print(e)
+
 
 @app.route('/test', methods=['GET'])
 def start2():
     return jsonify({"message":"bu bir get method"})
 
-@app.errorhandler(404)
-def invalidRoute(e):
-    return e
-    
+
 if __name__ == '__main__':
     app.run(debug=True)
     
