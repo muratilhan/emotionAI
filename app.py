@@ -11,9 +11,9 @@ CORS(app)
 print("DENEME -------- ")
 
 
-@app.route('/start', methods=['POST'])
+@app.route('/start', methods=['GET'])
 def start():
-        result = deneme()
+        result = deneme()                   
         response = jsonify(result)
         return response
 
