@@ -14,7 +14,7 @@ google-auth-oauthlib==1.0.0
 google-pasta==0.2.0
 grpcio==1.59.2
 gunicorn==21.2.0
-keras==2.14.0
+keras==2.10.0
 libclang==16.0.6
 Markdown==3.5.1
 MarkupSafe==2.1.3
