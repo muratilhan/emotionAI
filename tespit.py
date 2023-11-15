@@ -1,13 +1,14 @@
 import cv2
 from keras.preprocessing import image
 from keras.models import load_model
+import tensorflow as tf
 import numpy as np
 
 def deneme():
     print('deneme fonksiyonu içi ------------------- ')
     face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-    model = load_model("gulumseme_tespiti_modeli.h5")
+    model = tf.keras.models.load_model("gulumseme_tespiti_modeli.h5")
     cap = cv2.VideoCapture(0)
     print('tespit 12. satır: ',cap)
 
