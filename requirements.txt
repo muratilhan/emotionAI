@@ -11,8 +11,6 @@ oauthlib==3.2.2
 opencv-python==4.5.4.60
 pyasn1-modules==0.3.0
 requests==2.31.0
-tensorboard==2.5.0
-tensorboard-data-server==0.7.2
 tensorflow==2.10.0
 tensorflow-estimator==2.14.0
 tensorflow-intel==0.0.1
