@@ -1,4 +1,3 @@
-from tespit import deneme
 from keras.preprocessing import image
 from keras.models import load_model
 import numpy as np
@@ -11,11 +10,6 @@ CORS(app)
 print("DENEME -------- ")
 
 
-@app.route('/start', methods=['GET'])
-def start():
-        result = deneme()                   
-        response = jsonify(result)
-        return response
 
 
 @app.route('/test', methods=['GET'])
